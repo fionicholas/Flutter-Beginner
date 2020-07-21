@@ -4,7 +4,7 @@ class Church {
   String phoneNumber;
   String email;
   String profile;
-  String logoUrl;
+  String logoName;
 
-  Church({this.name, this.since, this.phoneNumber, this.email, this.profile, this.logoUrl});
+  Church({this.name, this.since, this.phoneNumber, this.email, this.profile, this.logoName});
 }

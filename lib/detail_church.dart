@@ -19,9 +19,10 @@ class DetailChurch extends StatelessWidget {
           children: <Widget>[
             Container(
                 padding : EdgeInsets.only(top : 30.0),
-                child: CircleAvatar(
-                  radius: 50.0,
-                  backgroundImage: NetworkImage(data.logoUrl),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(60.0)),
+                  child: Hero(tag : 'logo-${data.name}',
+                      child: Image.asset('images/${data.logoName}')),
                 ),
             ),
             Container(

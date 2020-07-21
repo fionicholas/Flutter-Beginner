@@ -28,7 +28,9 @@ class ChurchPages extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.all(Radius.circular(40.0)),
-                          child: Image.network(data.logoUrl),
+                          child: Hero(
+                              tag : 'logo-${data.name}',
+                              child: Image.asset('images/${data.logoName}')),
                         ),
                       ),
                     ),
